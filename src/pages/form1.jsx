@@ -33,7 +33,8 @@ export function Form1() {
   const onSubmit = async (data) => {
     await new Promise((resolve) => setTimeout(resolve, 1000));
     console.log(data);
-  };``
+  };
+  ``;
 
   console.log(watch("email"));
 
@@ -80,5 +81,6 @@ export function Form1() {
         </form>
       </div>
     </div>
+    // test push
   );
 }
