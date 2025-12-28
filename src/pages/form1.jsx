@@ -8,6 +8,7 @@ const schema = z
     password: z
       .string()
       .min(8, "Password must be at least 8 characters")
+      .max(20, "Password is too long!")
       .regex(
         /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])/,
         "Password must contain uppercase, lowercase, number, and special character"
