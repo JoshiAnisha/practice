@@ -33,7 +33,8 @@ export function Form1() {
   const onSubmit = async (data) => {
     await new Promise((resolve) => setTimeout(resolve, 1000));
     console.log(data);
-  };``
+  };
+  ``;
 
   console.log(watch("email"));
 
@@ -75,7 +76,7 @@ export function Form1() {
             type="submit"
             className="bg-green-700 text-white py-2 rounded-md hover:cursor-pointer hover:bg-gray-500"
           >
-            {isSubmitting ? "submitting.." : "Submit"}
+            {isSubmitting ? "submitting.." : "Submit..."}
           </button>
         </form>
       </div>
