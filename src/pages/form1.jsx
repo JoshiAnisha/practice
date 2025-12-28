@@ -19,12 +19,12 @@ const schema = z
     message: "Passwords do not match",
     path: ["confirmPassword"],
   });
-
+``;
 export function Form1() {
   const {
     register,
     handleSubmit,
-
+    watch,
     formState: { errors, isSubmitting },
   } = useForm({
     resolver: zodResolver(schema),
@@ -33,7 +33,9 @@ export function Form1() {
   const onSubmit = async (data) => {
     await new Promise((resolve) => setTimeout(resolve, 1000));
     console.log(data);
-  };
+  };``
+
+  console.log(watch("email"));
 
   return (
     <div className="min-h-screen  flex justify-center items-center">
